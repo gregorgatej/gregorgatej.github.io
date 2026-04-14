@@ -33,6 +33,14 @@ A clean, minimal academic website template, designed for researchers and PhD stu
     └── profile.jpg
 ```
 
+## Image Attribution
+
+### Publications Thumbnails
+
+| Publication | Image | License |
+|-------------|-------|---------|
+| Six Hats of Thinking and Design Thinking Techniques | ["Sticky Note Pad Papers on White Surface"](https://www.pexels.com/photo/sticky-note-pad-papers-on-white-surface-6991355/) by [DS stories](https://www.pexels.com/@ds-stories/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
+
 ## License
 
 MIT License
