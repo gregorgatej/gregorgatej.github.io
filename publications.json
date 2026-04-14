@@ -3,15 +3,15 @@
     {
       "title": "Comparing Different Types of Vector Search Using Faiss, cuVS, CuPy and Optimizing It with the Help of NVIDIA Nsight Systems",
       "thumbnail": "images/thumbs/nvidia_nsight.webp",
-      "description": "Preprint (2025). In-depth comparison and optimization of vector search methods using NVIDIA tools.",
+      "description": "Explores performance trade-offs between GPU vector search approaches, with practical optimization strategies and insights derived from NVIDIA Nsight Systems profiling.",
       "link": "#",
       "selected": 1
     },
     {
-      "title": "[Article Title 2]",
-      "thumbnail": "images/thumbs/2.jpg",
-      "description": "Preprint (2028). [Brief description of your article]",
-      "link": "#",
+      "title": "Six Hats of Thinking and Design Thinking Techniques",
+      "thumbnail": "images/thumbs/six_thinking_hats.png",
+      "description": "Shows how structured creative processes can break through common innovation obstacles and how to apply design thinking techniques to improve user focus and solution quality.",
+      "link": "https://dev.to/gregorgatej/six-hats-of-thinking-and-design-thinking-techniques-2li9",
       "selected": 0
     }
   ]
