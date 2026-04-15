@@ -21,12 +21,19 @@
       "link": "https://medium.com/@gregor.gatej/exploring-what-is-creativity-through-tina-seeligs-innovation-engine-588de7208837",
       "selected": 1
     },
-        {
+    {
       "title": "Igra obkoljevanja",
       "thumbnail": "images/thumbs/go.png",
       "description": "Examines the game of Go beyond its rules, interpreting it as a space of self-reflection and control, and connecting its strategic logic to philosophical ideas and modern AI systems that analyze and predict human behavior.",
       "link": "https://razpotja.si/razpotja_article/igra-obkoljevanja/",
       "selected": 1
+    },
+    {
+      "title": "On Lucretius’ Theory of Simulacra",
+      "thumbnail": "images/thumbs/simulacra.png",
+      "description": "Reinterprets Lucretius’ theory of simulacra to show how perception is shaped by continuous material processes, arguing that imposed mental categories can limit our ability to perceive and think creatively.",
+      "link": "https://medium.com/@gregor.gatej/on-lucretius-theory-of-simulacra-b5ece079bd51",
+      "selected": 0
     }
   ]
 }
