@@ -182,7 +182,7 @@ section {
 .pub-thumbnail {
   width: 100%;
   height: 180px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.15rem;
   border: 1px solid var(--border-color);
   overflow: hidden;
   cursor: pointer;
@@ -211,34 +211,31 @@ section {
 .pub-content h3 {
   font-size: 1.1rem;
   font-weight: 500;
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.1rem 0;
   color: var(--text-color);
   min-height: 6.0rem;
-  line-height: 1.4;  display: flex;
-  align-items: center;}
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.pub-content h3 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-time) ease;
+}
+
+.pub-content h3 a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
 
 .pub-content p {
   font-size: 0.95rem;
   color: var(--text-secondary);
-  margin: 0 0 1rem 0;
+  margin: 0;
   flex: 1;
   line-height: 1.5;
-}
-
-.pub-content a {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all var(--transition-time) ease;
-  padding: 0.4rem 0.6rem;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.pub-content a:hover {
-  color: #fff;
-  background-color: var(--accent-color);
-  box-shadow: 0 2px 6px rgba(74, 116, 185, 0.2);
 }
 
 .pub-attribution {

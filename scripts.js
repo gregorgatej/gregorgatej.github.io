@@ -95,23 +95,18 @@ function createPublicationElement(publication) {
   const content = document.createElement('div');
   content.className = 'pub-content';
   
-  // Add title
+  // Add title as link
   const title = document.createElement('h3');
-  title.textContent = publication.title;
+  const titleLink = document.createElement('a');
+  titleLink.href = publication.link || '#';
+  titleLink.textContent = publication.title;
+  title.appendChild(titleLink);
   content.appendChild(title);
   
   // Add description
   const description = document.createElement('p');
   description.textContent = publication.description;
   content.appendChild(description);
-  
-  // Add link
-  if (publication.link) {
-    const link = document.createElement('a');
-    link.href = publication.link;
-    link.textContent = 'Read More';
-    content.appendChild(link);
-  }
   
   pubItem.appendChild(content);
   

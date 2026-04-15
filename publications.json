@@ -1,10 +1,10 @@
 {
   "publications": [
     {
-      "title": "Comparing Different Types of Vector Search Using Faiss, cuVS, CuPy and Optimizing It with the Help of NVIDIA Nsight Systems",
+      "title": "Vector Search with Faiss, cuVS, CuPy and NVIDIA Nsight Optimization",
       "thumbnail": "images/thumbs/nvidia_nsight.webp",
       "description": "Explores performance trade-offs between GPU vector search approaches, with practical optimization strategies and insights derived from NVIDIA Nsight Systems profiling.",
-      "link": "https://medium.com/@gregor.gatej/comparing-different-types-of-vector-search-using-faiss-cuvs-cupy-and-optimizing-it-with-the-help-ccead10c7efd",
+      "link": "https://medium.com/@gregor.gatej/comparing-different-types-of-vector-search-using-faiss-cuvs-cupy-and-optimizing-it-with-the-help-ccead10c7efd?postPublishedType=repub",
       "selected": 1
     },
     {
