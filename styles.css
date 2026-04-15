@@ -364,7 +364,7 @@ section {
 }
 
 /* News section */
-.news-container {
+/* .news-container {
   max-height: 300px;
   overflow-y: auto;
   scrollbar-width: none;
@@ -390,7 +390,7 @@ section {
 
 .news-list li:hover {
   border-left-color: var(--accent-color);
-}
+} */
 
 /* Services and misc */
 .service-title {
@@ -606,9 +606,9 @@ strong {
     grid-template-columns: 1fr;
   }
 
-  /* Disable right-moving hover animations on mobile */
+  /* Disable right-moving hover animations on mobile, note: .news-list li:hover was removed */
   .publication-card:hover, .award-item:hover, 
-  .service-category:hover, .misc-item:hover, .news-list li:hover,
+  .service-category:hover, .misc-item:hover, 
   nav a:hover, .social-links-header a:hover, .pub-links a:hover, .project-card:hover {
     transform: none !important;
   }
