@@ -37,10 +37,11 @@ A clean, minimal academic website template, designed for researchers and PhD stu
 
 ### Publications Thumbnails
 
-| Publication | Image | License |
+| Article | Image | License |
 |-------------|-------|---------|
 | Six Hats of Thinking and Design Thinking Techniques | ["Sticky Note Pad Papers on White Surface"](https://www.pexels.com/photo/sticky-note-pad-papers-on-white-surface-6991355/) by [DS stories](https://www.pexels.com/@ds-stories/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
 | Exploring What Is Creativity Through Tina Seelig’s Innovation Engine | ["Close-Up Shot of a Flash Bulb on a White Surface"](https://www.pexels.com/photo/close-up-shot-of-a-flash-bulb-on-a-white-surface-7507693/) by [Zacharias Korsalka](https://www.pexels.com/@zacharias-korsalka-21691965/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
+| Igra obkoljevanja | ["Terytorium w go"](https://commons.wikimedia.org/wiki/File:Terytorium_w_go.png) by [Tim Ocean](https://commons.wikimedia.org/wiki/User:Tim_Ocean) | [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en) |
 | [Publication Title] | [Image Title] by [Creator Name] | [License Type] |
 
 ## License

@@ -19,7 +19,14 @@
       "thumbnail": "images/thumbs/light_bulb.jpg",
       "description": "Breaks down Tina Seelig’s Innovation Engine to explain how creativity emerges from the interplay of mindset and environment, enriched with practical insights from research on divergent thinking and active listening.",
       "link": "https://medium.com/@gregor.gatej/exploring-what-is-creativity-through-tina-seeligs-innovation-engine-588de7208837",
-      "selected": 0
+      "selected": 1
+    },
+        {
+      "title": "Igra obkoljevanja",
+      "thumbnail": "images/thumbs/go.png",
+      "description": "Examines the game of Go beyond its rules, interpreting it as a space of self-reflection and control, and connecting its strategic logic to philosophical ideas and modern AI systems that analyze and predict human behavior.",
+      "link": "https://razpotja.si/razpotja_article/igra-obkoljevanja/",
+      "selected": 1
     }
   ]
 }
