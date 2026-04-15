@@ -1,6 +1,5 @@
 // Global variables
 let allPublications = [];
-let showingSelected = true;
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,12 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
   sections.forEach((section, index) => {
     section.style.animationDelay = `${index * 0.1}s`;
   });
-  
-  // Add event listener for toggle button
-  const toggleButton = document.getElementById('toggle-publications');
-  if (toggleButton) {
-    toggleButton.addEventListener('click', togglePublications);
-  }
 });
 
 // Load publications from JSON file
@@ -32,7 +25,7 @@ function loadPublications() {
     .then(data => {
       console.log("Publications loaded successfully:", data);
       allPublications = data.publications;
-      renderPublications(true);
+      renderPublications();
     })
     .catch(error => {
       console.error('Error loading publications:', error);
@@ -47,28 +40,12 @@ function displayFallbackPublications() {
   container.innerHTML = `Error loading publications.`;
 }
 
-// Toggle between showing all or selected publications
-function togglePublications() {
-  showingSelected = !showingSelected;
-  renderPublications(showingSelected);
-  
-  // Update button text
-  const toggleButton = document.getElementById('toggle-publications');
-  toggleButton.textContent = showingSelected ? 'Show All' : 'Show Selected';
-  const toggleHeader = document.getElementById('toggle-header');
-  toggleHeader.textContent = showingSelected ? 'Selected Publications' : 'All Publications';
-}
-
-// Render publications based on selection state
-function renderPublications(selectedOnly) {
+// Render publications
+function renderPublications() {
   const publicationsContainer = document.getElementById('publications-container');
   publicationsContainer.innerHTML = '';
   
-  const pubsToShow = selectedOnly ? 
-    allPublications.filter(pub => pub.selected === 1) : 
-    allPublications;
-  
-  pubsToShow.forEach(publication => {
+  allPublications.forEach(publication => {
     const pubElement = createPublicationElement(publication);
     publicationsContainer.appendChild(pubElement);
   });
@@ -77,19 +54,17 @@ function renderPublications(selectedOnly) {
 // Create HTML element for a publication
 function createPublicationElement(publication) {
   const pubItem = document.createElement('div');
-  pubItem.className = 'publication-card';
+  pubItem.className = 'publication-item';
   
-  // Create thumbnail
-  const thumbnail = document.createElement('div');
-  thumbnail.className = 'pub-thumbnail';
-  thumbnail.onclick = () => openModal(publication.thumbnail);
-  thumbnail.style.cursor = 'pointer';
-  
-  const thumbnailImg = document.createElement('img');
-  thumbnailImg.src = publication.thumbnail;
-  thumbnailImg.alt = `${publication.title} thumbnail`;
-  thumbnail.appendChild(thumbnailImg);
-  pubItem.appendChild(thumbnail);
+  // Make entire item clickable
+  pubItem.addEventListener('click', function(e) {
+    // If clicking on the link itself, let it handle navigation normally
+    if (e.target.tagName === 'A') {
+      return;
+    }
+    // Otherwise, navigate using the publication link
+    window.location.href = publication.link || '#';
+  });
   
   // Create content container
   const content = document.createElement('div');
@@ -97,6 +72,7 @@ function createPublicationElement(publication) {
   
   // Add title as link
   const title = document.createElement('h3');
+  title.className = 'pub-title';
   const titleLink = document.createElement('a');
   titleLink.href = publication.link || '#';
   titleLink.textContent = publication.title;
@@ -113,29 +89,4 @@ function createPublicationElement(publication) {
   return pubItem;
 }
 
-// Modal functionality for viewing original images
-function openModal(imageSrc) {
-  const modal = document.getElementById('imageModal');
-  const modalImg = document.getElementById('modalImage');
-  modal.style.display = "block";
-  setTimeout(() => {
-    modal.classList.add('show');
-  }, 10);
-  modalImg.src = imageSrc;
-}
 
-function closeModal() {
-  const modal = document.getElementById('imageModal');
-  modal.classList.remove('show');
-  setTimeout(() => {
-    modal.style.display = "none";
-  }, 300);
-}
-
-// Close modal when clicking outside the image
-window.onclick = function(event) {
-  const modal = document.getElementById('imageModal');
-  if (event.target == modal) {
-    closeModal();
-  }
-}

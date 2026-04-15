@@ -33,7 +33,7 @@ A clean, minimal academic website template, designed for researchers and PhD stu
     └── profile.jpg
 ```
 
-## Image Attribution
+<!-- ## Image Attribution
 
 ### Publications Thumbnails
 
@@ -44,7 +44,7 @@ A clean, minimal academic website template, designed for researchers and PhD stu
 | Igra obkoljevanja | ["Terytorium w go"](https://commons.wikimedia.org/wiki/File:Terytorium_w_go.png) by [Tim Ocean](https://commons.wikimedia.org/wiki/User:Tim_Ocean) | [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en) |
 | On Lucretius’ Theory of Simulacra | [Close Up Photo of a Painting](https://www.pexels.com/photo/close-up-photo-of-a-painting-8425692/) by [
 Mateusz Kitka](https://www.pexels.com/@mateuszkitka/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
-| Irwinove pozne črte | [Low Angle Shot of Power Lines in the Sky](https://www.pexels.com/photo/low-angle-shot-of-power-lines-in-the-sky-12014309/) by [Dancan Wachira](https://www.pexels.com/@washira-m1/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
+| Irwinove pozne črte | [Low Angle Shot of Power Lines in the Sky](https://www.pexels.com/photo/low-angle-shot-of-power-lines-in-the-sky-12014309/) by [Dancan Wachira](https://www.pexels.com/@washira-m1/) | [Pexels License](https://www.pexels.com/license/) - Free to use | -->
 
 ## License
 

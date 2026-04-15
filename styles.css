@@ -132,136 +132,86 @@ section {
 }
 
 /* Publication Styles */
-.publications-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.toggle-publications {
-  background-color: rgba(74, 116, 185, 0.08);
-  color: var(--accent-color);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: all var(--transition-time) ease;
-}
-
-.toggle-publications:hover {
-  background-color: var(--accent-color);
-  color: white;
-}
-
 #publications-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
   margin-top: 1.25rem;
 }
 
-.publication-card {
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1.25rem;
-  background-color: var(--bg-color);
-  transition: all var(--transition-time) ease;
-  box-shadow: 0 1px 3px var(--shadow-color);
+.publication-item {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
   display: flex;
-  flex-direction: column;
-}
-
-.publication-card:hover {
-  border-color: var(--accent-color);
-  box-shadow: 0 4px 12px rgba(74, 116, 185, 0.15);
-  transform: translateY(-2px);
-}
-
-.pub-thumbnail {
-  width: 100%;
-  height: 180px;
-  margin-bottom: 0.15rem;
-  border: 1px solid var(--border-color);
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px var(--shadow-color);
-}
-
-.pub-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  gap: 1.25rem;
   transition: transform var(--transition-time) ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
-.pub-thumbnail:hover img {
-  transform: scale(1.08);
+.publication-item:hover {
+  transform: translateX(var(--animation-offset));
 }
 
 .pub-content {
-  display: flex;
-  flex-direction: column;
   flex: 1;
-}
-
-.pub-content h3 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0 0 0.1rem 0;
-  color: var(--text-color);
-  min-height: 6.0rem;
-  line-height: 1.4;
-  display: flex;
-  align-items: center;
-}
-
-.pub-content h3 a {
-  color: inherit;
-  text-decoration: none;
-  transition: color var(--transition-time) ease;
-}
-
-.pub-content h3 a:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-
-.pub-content p {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  margin: 0;
-  flex: 1;
-  line-height: 1.5;
-}
-
-.pub-attribution {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin: 0.5rem 0 1rem 0;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border-color);
-  line-height: 1.4;
-}
-
-.pub-attribution a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.pub-attribution a:hover {
-  text-decoration: underline;
-  background-color: transparent;
-  box-shadow: none;
 }
 
 .pub-title {
   font-weight: 500;
   margin-bottom: 0.4rem;
   font-size: 1.05rem;
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+.pub-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-time) ease;
+  display: block;
+}
+
+.publication-item:hover .pub-title a {
+  color: var(--accent-color);
+}
+
+.pub-content > p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.5;
+}
+
+.pub-links {
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.pub-links a {
+  color: var(--accent-color);
+  transition: all var(--transition-time) ease;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(74, 116, 185, 0.08);
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  color: #fff;
+  background-color: var(--accent-color);
+  transform: translateX(3px);
+  box-shadow: 0 2px 5px rgba(74, 116, 185, 0.2);
+}
+
+.pub-attribution a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .pub-authors {
@@ -313,28 +263,6 @@ section {
   100% {
     box-shadow: 0 0 0 0 rgba(74, 116, 185, 0);
   }
-}
-
-.pub-links {
-  font-size: 0.85rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.pub-links a {
-  color: var(--accent-color);
-  transition: all var(--transition-time) ease;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  background-color: rgba(74, 116, 185, 0.08);
-}
-
-.pub-links a:hover {
-  color: #fff;
-  background-color: var(--accent-color);
-  transform: translateX(3px);
-  box-shadow: 0 2px 5px rgba(74, 116, 185, 0.2);
 }
 
 /* Awards section */
@@ -439,65 +367,6 @@ strong {
   color: var(--accent-color);
 }
 
-/* Modal styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.85);
-  transition: opacity var(--transition-time);
-  opacity: 0;
-}
-
-.modal.show {
-  opacity: 1;
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 85%;
-  max-height: 85%;
-  border-radius: 4px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  animation: zoom var(--transition-time) ease-out;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.modal-close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 35px;
-  font-weight: normal;
-  cursor: pointer;
-  transition: color var(--transition-time);
-  opacity: 0.8;
-}
-
-.modal-close:hover {
-  color: #fff;
-  opacity: 1;
-  transform: scale(1.1);
-}
-
 /* GitHub Projects Grid */
 .projects-grid {
   display: grid;
@@ -507,8 +376,9 @@ strong {
 }
 
 .project-card {
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 0;
   padding: 1.25rem;
   background-color: var(--bg-color);
   transition: all var(--transition-time) ease;
@@ -521,7 +391,8 @@ strong {
 }
 
 .project-card:hover {
-  border-color: var(--accent-color);
+  border-right-color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
   box-shadow: 0 4px 12px rgba(74, 116, 185, 0.15);
   transform: translateY(-2px);
 }
@@ -531,6 +402,11 @@ strong {
   font-weight: 500;
   margin: 0 0 0.75rem 0;
   color: var(--text-color);
+  transition: color var(--transition-time) ease;
+}
+
+.project-card:hover h3 {
+  color: var(--accent-color);
 }
 
 .project-card p {
@@ -556,6 +432,8 @@ strong {
 }
 
 .project-icon {
+  /* Comment this out for an upper right arrow to appear */
+  display: none;
   width: 16px;
   height: 16px;
   color: var(--accent-color);

@@ -2,42 +2,36 @@
   "publications": [
     {
       "title": "Vector Search with Faiss, cuVS, CuPy and NVIDIA Nsight Optimization",
-      "thumbnail": "images/thumbs/nvidia_nsight.webp",
       "description": "Explores performance trade-offs between GPU vector search approaches, with practical optimization strategies and insights derived from NVIDIA Nsight Systems profiling.",
       "link": "https://medium.com/@gregor.gatej/comparing-different-types-of-vector-search-using-faiss-cuvs-cupy-and-optimizing-it-with-the-help-ccead10c7efd?postPublishedType=repub",
       "selected": 1
     },
     {
       "title": "Six Hats of Thinking and Design Thinking Techniques",
-      "thumbnail": "images/thumbs/sticky_notes.png",
       "description": "Shows how structured creative processes can break through common innovation obstacles and how to apply design thinking techniques to improve user focus and solution quality.",
       "link": "https://dev.to/gregorgatej/six-hats-of-thinking-and-design-thinking-techniques-2li9",
       "selected": 1
     },
     {
       "title": "Exploring What Is Creativity Through Tina Seelig’s Innovation Engine",
-      "thumbnail": "images/thumbs/light_bulb.jpg",
       "description": "Breaks down Tina Seelig’s Innovation Engine to explain how creativity emerges from the interplay of mindset and environment, enriched with practical insights from research on divergent thinking and active listening.",
       "link": "https://medium.com/@gregor.gatej/exploring-what-is-creativity-through-tina-seeligs-innovation-engine-588de7208837",
       "selected": 1
     },
     {
       "title": "Igra obkoljevanja",
-      "thumbnail": "images/thumbs/go.png",
       "description": "Examines the game of Go beyond its rules, interpreting it as a space of self-reflection and control, and connecting its strategic logic to philosophical ideas and modern AI systems that analyze and predict human behavior.",
       "link": "https://razpotja.si/razpotja_article/igra-obkoljevanja/",
       "selected": 1
     },
     {
       "title": "On Lucretius’ Theory of Simulacra",
-      "thumbnail": "images/thumbs/simulacra.png",
       "description": "Reinterprets Lucretius’ theory of simulacra to show how perception is shaped by continuous material processes, arguing that imposed mental categories can limit our ability to perceive and think creatively.",
       "link": "https://medium.com/@gregor.gatej/on-lucretius-theory-of-simulacra-b5ece079bd51",
       "selected": 0
     },
     {
       "title": "Irwinove pozne črte",
-      "thumbnail": "images/thumbs/lines.jpg",
       "description": "Illustrates how creative work arises from breaking habitual patterns and engaging with uncertainty, linking Robert Irwin’s practice of attentive observation to Deleuze and Guattari’s theory of desiring-machines.",
       "link": "https://radiostudent.si/kultura/odprti-termin-za-kulturo/brati-anti-ojdipa",
       "selected": 0
