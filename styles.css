@@ -427,62 +427,35 @@ section {
   color: var(--accent-color);
 }
 
-.education-thesis {
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
-  line-height: 1.5;
-}
-
-.education-thesis strong {
-  font-weight: 500;
-  color: var(--text-secondary);
-}
-
-.education-thesis a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.education-thesis a:hover {
-  color: var(--accent-color);
-}
-
-.education-theses {
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
-}
-
-.education-theses strong {
-  font-weight: 500;
-  color: var(--text-secondary);
-  display: block;
-  margin-bottom: 0.4rem;
-}
-
-.education-theses ul {
-  list-style: disc;
-  margin: 0.4rem 0 0 1.5rem;
-  padding: 0;
-  color: var(--text-secondary);
-}
-
-.education-theses li {
-  margin-bottom: 0.3rem;
-  color: var(--text-secondary);
-}
-
-.education-theses li a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.education-theses li a:hover {
-  color: var(--accent-color);
-}
-
 /* Miscellaneous */
 .misc-item p {
   margin: 0.25rem 0 0.75rem;
+}
+
+/* Technical Skills */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 1.25rem;
+}
+
+.skill-category {
+  padding: 0;
+}
+
+.skill-category h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0 0 0.2rem 0;
+  color: var(--text-color);
+}
+
+.skill-category p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* Footer */
