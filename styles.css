@@ -56,6 +56,17 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+h1 a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--transition-time) ease;
+}
+
+h1 a:hover {
+  color: var(--accent-color);
+}
+
 h2 {
   font-size: 1.4rem;
   font-weight: 500;
@@ -90,7 +101,7 @@ nav ul {
   gap: 1.25rem;
 }
 
-nav a, .social-links-header a {
+nav a {
   text-decoration: none;
   color: var(--text-secondary);
   transition: all var(--transition-time) ease;
@@ -102,16 +113,37 @@ nav a, .social-links-header a {
   gap: 0.4rem;
 }
 
-nav a:hover, .social-links-header a:hover {
+nav a:hover {
   color: var(--accent-color);
   background-color: rgba(74, 116, 185, 0.08);
   transform: translateX(var(--animation-offset));
 }
 
+.social-links-header a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  transition: all var(--transition-time) ease;
+  font-weight: 400;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: var(--bg-color);
+  /* box-shadow: 0 1px 3px var(--shadow-color); */
+  font-size: 0.95rem;
+}
+
+.social-links-header a:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
 .social-links-header {
   display: flex;
-  gap: 1.25rem;
+  gap: 0.75rem;
   margin: 1.2rem 0;
+  flex-wrap: wrap;
 }
 
 .social-links-header a i {
@@ -173,8 +205,6 @@ section {
 .article-item {
   margin-bottom: 1.5rem;
   padding: 0.75rem 1rem;
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
   border-radius: 0 0 8px 0;
   display: flex;
   gap: 1.25rem;
@@ -182,14 +212,10 @@ section {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  box-shadow: 0 1px 3px var(--shadow-color);
 }
 
 .article-item:hover {
-  border-right-color: var(--accent-color);
-  border-bottom-color: var(--accent-color);
   transform: translateX(var(--animation-offset));
-  box-shadow: 0 4px 12px rgba(74, 116, 185, 0.15);
 }
 
 .pub-content {
@@ -538,13 +564,10 @@ strong {
 }
 
 .project-card {
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
   border-radius: 0 0 8px 0;
   padding: 1.25rem;
   background-color: var(--bg-color);
   transition: all var(--transition-time) ease;
-  box-shadow: 0 1px 3px var(--shadow-color);
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -553,9 +576,6 @@ strong {
 }
 
 .project-card:hover {
-  border-right-color: var(--accent-color);
-  border-bottom-color: var(--accent-color);
-  box-shadow: 0 4px 12px rgba(74, 116, 185, 0.15);
   transform: translateY(-2px);
 }
 
@@ -644,6 +664,7 @@ strong {
   }
 
   /* Disable right-moving hover animations on mobile, note: .news-list li:hover was removed */
+  .article-item:hover,
   .publication-card:hover, 
   .misc-item:hover, 
   nav a:hover, .social-links-header a:hover, .pub-links a:hover, .project-card:hover {
