@@ -1,10 +1,10 @@
 // Global variables
-let allPublications = [];
+let allArticles = [];
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
-  // Load publications data
-  loadPublications();
+  // Load articles data
+  loadArticles();
   
   // Initialize animation delays for sections
   const sections = document.querySelectorAll('section');
@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Load publications from JSON file
-function loadPublications() {
-  fetch('publications.json')
+// Load articles from JSON file
+function loadArticles() {
+  fetch('articles.json')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
@@ -23,38 +23,38 @@ function loadPublications() {
       return response.json();
     })
     .then(data => {
-      console.log("Publications loaded successfully:", data);
-      allPublications = data.publications;
-      renderPublications();
+      console.log("Articles loaded successfully:", data);
+      allArticles = data.articles;
+      renderArticles();
     })
     .catch(error => {
-      console.error('Error loading publications:', error);
-      // Create fallback publications display if JSON loading fails
-      displayFallbackPublications();
+      console.error('Error loading articles:', error);
+      // Create fallback articles display if JSON loading fails
+      displayFallbackArticles();
     });
 }
 
 // Fallback if JSON loading fails
-function displayFallbackPublications() {
-  const container = document.getElementById('publications-container');
-  container.innerHTML = `Error loading publications.`;
+function displayFallbackArticles() {
+  const container = document.getElementById('articles-container');
+  container.innerHTML = `Error loading articles.`;
 }
 
-// Render publications
-function renderPublications() {
-  const publicationsContainer = document.getElementById('publications-container');
-  publicationsContainer.innerHTML = '';
+// Render articles
+function renderArticles() {
+  const articlesContainer = document.getElementById('articles-container');
+  articlesContainer.innerHTML = '';
   
-  allPublications.forEach(publication => {
-    const pubElement = createPublicationElement(publication);
-    publicationsContainer.appendChild(pubElement);
+  allArticles.forEach(article => {
+    const pubElement = createArticleElement(article);
+    articlesContainer.appendChild(pubElement);
   });
 }
 
-// Create HTML element for a publication
-function createPublicationElement(publication) {
+// Create HTML element for an article
+function createArticleElement(article) {
   const pubItem = document.createElement('div');
-  pubItem.className = 'publication-item';
+  pubItem.className = 'article-item';
   
   // Make entire item clickable
   pubItem.addEventListener('click', function(e) {
@@ -62,8 +62,8 @@ function createPublicationElement(publication) {
     if (e.target.tagName === 'A') {
       return;
     }
-    // Otherwise, navigate using the publication link
-    window.location.href = publication.link || '#';
+    // Otherwise, navigate using the article link
+    window.location.href = article.link || '#';
   });
   
   // Create content container
@@ -74,14 +74,14 @@ function createPublicationElement(publication) {
   const title = document.createElement('h3');
   title.className = 'pub-title';
   const titleLink = document.createElement('a');
-  titleLink.href = publication.link || '#';
-  titleLink.textContent = publication.title;
+  titleLink.href = article.link || '#';
+  titleLink.textContent = article.title;
   title.appendChild(titleLink);
   content.appendChild(title);
   
   // Add description
   const description = document.createElement('p');
-  description.textContent = publication.description;
+  description.textContent = article.description;
   content.appendChild(description);
   
   pubItem.appendChild(content);

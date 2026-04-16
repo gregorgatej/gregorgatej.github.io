@@ -1,5 +1,5 @@
 {
-  "publications": [
+  "articles": [
     {
       "title": "Vector Search with Faiss, cuVS, CuPy and NVIDIA Nsight Optimization",
       "description": "Explores performance trade-offs between GPU vector search approaches, with practical optimization strategies and insights derived from NVIDIA Nsight Systems profiling.",

@@ -18,7 +18,7 @@ A clean, minimal academic website template, designed for researchers and PhD stu
 1. Run `python -m http.server` and visit `http://localhost:8000`
 2. Replace placeholders marked with `[brackets]` in `index.html`
 3. Update profile photo in `images/profile.jpeg`
-4. Modify `publications.json` for your papers
+4. Modify `articles.json` for your articles
 5. Customize sections as needed (About, Research, News, etc.)
 
 ## File Structure
@@ -28,7 +28,7 @@ A clean, minimal academic website template, designed for researchers and PhD stu
 ├── index.html          # Main webpage
 ├── styles.css          # CSS styling
 ├── scripts.js          # JavaScript for dynamic content
-├── publications.json   # Publication data
+├── articles.json       # Article data
 └── images/            # Image assets
     └── profile.jpg
 ```
