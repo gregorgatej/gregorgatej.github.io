@@ -418,6 +418,68 @@ section {
   color: var(--text-secondary);
 }
 
+.education-institution a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.education-institution a:hover {
+  color: var(--accent-color);
+}
+
+.education-thesis {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.education-thesis strong {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.education-thesis a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.education-thesis a:hover {
+  color: var(--accent-color);
+}
+
+.education-theses {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.education-theses strong {
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.education-theses ul {
+  list-style: disc;
+  margin: 0.4rem 0 0 1.5rem;
+  padding: 0;
+  color: var(--text-secondary);
+}
+
+.education-theses li {
+  margin-bottom: 0.3rem;
+  color: var(--text-secondary);
+}
+
+.education-theses li a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.education-theses li a:hover {
+  color: var(--accent-color);
+}
+
 /* Miscellaneous */
 .misc-item p {
   margin: 0.25rem 0 0.75rem;
