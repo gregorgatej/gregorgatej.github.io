@@ -152,12 +152,14 @@ section {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  box-shadow: 0 1px 3px var(--shadow-color);
 }
 
 .article-item:hover {
   border-right-color: var(--accent-color);
   border-bottom-color: var(--accent-color);
   transform: translateX(var(--animation-offset));
+  box-shadow: 0 4px 12px rgba(74, 116, 185, 0.15);
 }
 
 .pub-content {
