@@ -105,12 +105,12 @@ nav a:hover, .social-links-header a:hover {
 }
 
 /* Unified animation for elements (not sections) */
-.article-item, .service-category, .misc-item, .news-list li {
+.article-item, .misc-item, .news-list li {
   transition: transform var(--transition-time) ease;
 }
 
 .article-item:hover, 
-.service-category:hover, .misc-item:hover, .news-list li:hover {
+.misc-item:hover, .news-list li:hover {
   transform: translateX(var(--animation-offset));
 }
 
@@ -359,14 +359,67 @@ section {
   border-left-color: var(--accent-color);
 } */
 
-/* Services and misc */
-.service-title {
-  font-weight: 500;
-  margin-bottom: 0.35rem;
-  color: var(--accent-color);
+/* Education Timeline section */
+.education-timeline {
+  position: relative;
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
 }
 
-.service-category p, .misc-item p {
+/* Vertical timeline line */
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(74, 116, 185, 0.25);
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 2.25rem;
+}
+
+.education-timeline-dot {
+  position: absolute;
+  left: -1.825rem;
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bg-color);
+  border: 2px solid rgba(74, 116, 185, 0.4);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.education-content {
+  transition: all var(--transition-time) ease;
+}
+
+.education-dates {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+  font-weight: 400;
+}
+
+.education-degree {
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.education-institution {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Miscellaneous */
+.misc-item p {
   margin: 0.25rem 0 0.75rem;
 }
 
@@ -525,7 +578,7 @@ strong {
 
   /* Disable right-moving hover animations on mobile, note: .news-list li:hover was removed */
   .publication-card:hover, 
-  .service-category:hover, .misc-item:hover, 
+  .misc-item:hover, 
   nav a:hover, .social-links-header a:hover, .pub-links a:hover, .project-card:hover {
     transform: none !important;
   }
