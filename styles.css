@@ -105,11 +105,11 @@ nav a:hover, .social-links-header a:hover {
 }
 
 /* Unified animation for elements (not sections) */
-.article-item, .award-item, .service-category, .misc-item, .news-list li {
+.article-item, .service-category, .misc-item, .news-list li {
   transition: transform var(--transition-time) ease;
 }
 
-.article-item:hover, .award-item:hover, 
+.article-item:hover, 
 .service-category:hover, .misc-item:hover, .news-list li:hover {
   transform: translateX(var(--animation-offset));
 }
@@ -271,27 +271,63 @@ section {
   }
 }
 
-/* Awards section */
-.award-item {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 0.1rem;
+/* Experience Timeline section */
+.experience-timeline {
+  position: relative;
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
 }
 
-.award-year {
-  font-weight: 500;
-  color: var(--accent-color);
-  flex: 0 0 80px;
+/* Vertical timeline line */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(74, 116, 185, 0.25);
 }
 
-.award-desc {
-  flex: 1;
+.experience-item {
+  position: relative;
+  margin-bottom: 2.25rem;
 }
 
-.award-desc small {
-  font-size: 0.85rem;
+.experience-timeline-dot {
+  position: absolute;
+  left: -1.825rem;
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  background-color: var(--bg-color);
+  border: 2px solid rgba(74, 116, 185, 0.4);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.experience-content {
+  transition: all var(--transition-time) ease;
+}
+
+.experience-dates {
+  font-size: 0.9rem;
   color: var(--text-secondary);
-  margin-left: 0.5rem;
+  margin-bottom: 0.35rem;
+  font-weight: 400;
+}
+
+.experience-position {
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.experience-company {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
 /* News section */
@@ -488,7 +524,7 @@ strong {
   }
 
   /* Disable right-moving hover animations on mobile, note: .news-list li:hover was removed */
-  .publication-card:hover, .award-item:hover, 
+  .publication-card:hover, 
   .service-category:hover, .misc-item:hover, 
   nav a:hover, .social-links-header a:hover, .pub-links a:hover, .project-card:hover {
     transform: none !important;
