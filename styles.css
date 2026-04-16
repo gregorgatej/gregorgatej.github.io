@@ -60,7 +60,8 @@ h2 {
   font-weight: 500;
   margin: 1.75rem 0 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--border-color);
+  /* Uncomment to introduce border line between sections */
+  /* border-bottom: 1px solid var(--border-color); */
   letter-spacing: -0.01em;
 }
 
@@ -140,17 +141,21 @@ section {
 
 .publication-item {
   margin-bottom: 1.5rem;
-  padding: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  border-radius: 0 0 8px 0;
   display: flex;
   gap: 1.25rem;
-  transition: transform var(--transition-time) ease;
+  transition: all var(--transition-time) ease;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
 
 .publication-item:hover {
+  border-right-color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
   transform: translateX(var(--animation-offset));
 }
 
@@ -378,7 +383,7 @@ strong {
 .project-card {
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  border-radius: 0;
+  border-radius: 0 0 8px 0;
   padding: 1.25rem;
   background-color: var(--bg-color);
   transition: all var(--transition-time) ease;
