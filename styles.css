@@ -44,11 +44,6 @@ header {
   transition: transform var(--transition-time) ease, box-shadow var(--transition-time) ease;
 }
 
-.header-image img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 5px 15px var(--shadow-color);
-}
-
 h1 {
   font-size: 2.2rem;
   font-weight: 500;
