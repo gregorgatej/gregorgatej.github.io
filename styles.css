@@ -66,6 +66,17 @@ h2 {
   letter-spacing: -0.01em;
 }
 
+h2 a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--transition-time) ease;
+}
+
+h2 a:hover {
+  color: var(--accent-color);
+}
+
 /* Navigation */
 nav {
   margin-top: 1.5rem;
