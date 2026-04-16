@@ -355,7 +355,7 @@ section {
 }
 
 #experience {
-  margin-top: 2.75rem;
+  margin-top: 3.75rem;
 }
 
 .experience-item {
@@ -434,7 +434,7 @@ section {
 
 /* Education Timeline section */
 #education {
-  margin-top: 3.50rem;
+  margin-top: 3.75rem;
 }
 
 .education-timeline {
@@ -516,7 +516,7 @@ section {
 
 /* Technical Skills */
 #technical-skills {
-  margin-top: 3.50rem;
+  margin-top: 3.75rem;
 }
 
 .skills-container {
@@ -604,7 +604,7 @@ strong {
   margin-top: 3.75rem;
 }
 #articles {
-  margin-top: 2.75rem;
+  margin-top: 3.75rem;
 }
 .projects-grid {
   display: grid;
