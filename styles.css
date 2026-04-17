@@ -26,6 +26,15 @@
 }
 
 @font-face {
+  font-family: 'Amulya Variable';
+  src: url('assets/fonts/AmulyaVariable.woff2') format('woff2');
+  /* font-variation-settings: "wght" 400; */
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Synonym';
   src: url('assets/fonts/Synonym-Regular.woff2') format('woff2');
   font-weight: normal;
@@ -398,7 +407,7 @@ section {
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: rgba(74, 116, 185, 0.25);
+  background-color: rgba(150, 150, 150, 0.25);
 }
 
 #experience {
@@ -422,7 +431,7 @@ section {
   width: 10px;
   height: 10px;
   background-color: var(--bg-color);
-  border: 2px solid rgba(74, 116, 185, 0.4);
+  border: 2px solid rgba(150, 150, 150, 0.4);
   border-radius: 50%;
   z-index: 2;
 }
@@ -439,10 +448,15 @@ section {
 }
 
 .experience-position {
-  font-weight: 500;
+  font-weight: bold;
   color: var(--text-color);
   margin-bottom: 0.2rem;
   font-size: 1rem;
+}
+
+.classification {
+  color: rgba(74, 85, 104, 0.8);
+  font-weight: normal;
 }
 
 .experience-company {
@@ -499,7 +513,7 @@ section {
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: rgba(74, 116, 185, 0.25);
+  background-color: rgba(150, 150, 150, 0.25);
 }
 
 .education-item {
@@ -519,7 +533,7 @@ section {
   width: 10px;
   height: 10px;
   background-color: var(--bg-color);
-  border: 2px solid rgba(74, 116, 185, 0.4);
+  border: 2px solid rgba(150, 150, 150, 0.4);
   border-radius: 50%;
   z-index: 2;
 }
@@ -536,7 +550,8 @@ section {
 }
 
 .education-degree {
-  font-weight: 500;
+  font-family: 'Amulya Variable', 'Amulya', serif;
+  font-weight: 501;
   color: var(--text-color);
   margin-bottom: 0.2rem;
   font-size: 1rem;
@@ -578,11 +593,11 @@ section {
 }
 
 .skill-category h3 {
-  font-family: 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: 'Amulya Variable', 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 0.95rem;
-  font-weight: bold;
-  margin: 0 0 0.9rem 0;
-  color: var(--text-color);
+  font-weight: 500;
+  margin: 0 0 1.5rem 0;
+  color: rgba(74, 85, 104, 0.8);
 }
 
 .skill-tags {
@@ -594,12 +609,13 @@ section {
 .skill-tag {
   display: inline-block;
   padding: 0.4rem 0.8rem;
-  background-color: var(--bg-color);
+  background-color: rgba(245, 245, 245, 0.2);
   color: var(--text-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-radius: 0 0 8px 0;
   font-size: 0.9rem;
+  font-weight: bold;
   box-shadow: 0 1px 3px var(--shadow-color);
   transition: all var(--transition-time) ease;
 }
@@ -610,7 +626,7 @@ section {
 
 /* Footer */
 footer {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   padding-top: 1.2rem;
   border-top: 1px solid var(--border-color);
   font-size: 0.85rem;
