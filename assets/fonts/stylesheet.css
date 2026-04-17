@@ -1,26 +1,8 @@
 @font-face {
-    font-family: 'Amulya';
-    src: url('Amulya-Bold.woff2') format('woff2'),
-        url('Amulya-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Amulya';
-    src: url('Amulya-Regular.woff2') format('woff2'),
-        url('Amulya-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Amulya';
-    src: url('Amulya-Light.woff2') format('woff2'),
-        url('Amulya-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'Synonym';
+    src: url('Synonym-Regular.woff2') format('woff2'),
+        url('Synonym-Regular.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
