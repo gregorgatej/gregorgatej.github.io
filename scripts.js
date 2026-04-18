@@ -68,11 +68,11 @@ function createArticleElement(article) {
   
   // Create content container
   const content = document.createElement('div');
-  content.className = 'pub-content';
+  content.className = 'article-content';
   
   // Add title as link
   const title = document.createElement('h3');
-  title.className = 'pub-title';
+  title.className = 'article-title';
   const titleLink = document.createElement('a');
   titleLink.href = article.link || '#';
   titleLink.textContent = article.title;
