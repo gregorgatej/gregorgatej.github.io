@@ -46,18 +46,18 @@ function renderArticles() {
   articlesContainer.innerHTML = '';
   
   allArticles.forEach(article => {
-    const pubElement = createArticleElement(article);
-    articlesContainer.appendChild(pubElement);
+    const articleElement = createArticleElement(article);
+    articlesContainer.appendChild(articleElement);
   });
 }
 
 // Create HTML element for an article
 function createArticleElement(article) {
-  const pubItem = document.createElement('div');
-  pubItem.className = 'article-item';
+  const articleItem = document.createElement('div');
+  articleItem.className = 'article-item';
   
   // Make entire item clickable
-  pubItem.addEventListener('click', function(e) {
+  articleItem.addEventListener('click', function(e) {
     // If clicking on the link itself, let it handle navigation normally
     if (e.target.tagName === 'A') {
       return;
@@ -84,9 +84,9 @@ function createArticleElement(article) {
   description.textContent = article.description;
   content.appendChild(description);
   
-  pubItem.appendChild(content);
+  articleItem.appendChild(content);
   
-  return pubItem;
+  return articleItem;
 }
 
 

@@ -37,16 +37,23 @@
   --bg-color: #fff;
   --text-color: #2d3748;
   --text-secondary: #4a5568;
-  --accent-color: #4a74b9;
-  --accent-hover: #3a5c9e;
+  --accent-color: #059669;
+  --accent-hover: #047857;
+  --accent-rgba-light: rgba(5, 150, 105, 0.08);
+  --accent-rgba-medium: rgba(5, 150, 105, 0.15);
+  --accent-rgba-strong: rgba(5, 150, 105, 0.2);
+  --accent-rgba-pulse: rgba(5, 150, 105, 0.4);
   --border-color: #e2e8f0;
   --shadow-color: rgba(0,0,0,0.05);
+  --timeline-rgba-light: rgba(150, 150, 150, 0.25);
+  --timeline-rgba-dark: rgba(150, 150, 150, 0.4);
   --animation-offset: 3px;
   --transition-time: 0.3s;
+  --font-serif: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
 }
 
 body {
-  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
@@ -58,7 +65,6 @@ body {
 
 header {
   margin-bottom: -0.5rem;
-  padding-bottom: -4.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,7 +84,7 @@ header {
 }
 
 h1 {
-  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 0.25rem;
@@ -99,7 +105,7 @@ h1 a:hover {
 }
 
 h2 {
-  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-size: 1.4rem;
   font-weight: bold;
   margin: 2.5rem 0 1.25rem 0;
@@ -108,10 +114,6 @@ h2 {
   text-transform: uppercase;
   color: var(--text-color);
   line-height: 1.3;
-}
-
-h2::after {
-  display: none;
 }
 
 h2 a {
@@ -152,7 +154,7 @@ nav a {
 
 nav a:hover {
   color: var(--accent-color);
-  background-color: rgba(74, 116, 185, 0.08);
+  background-color: var(--accent-rgba-light);
   transform: translateX(var(--animation-offset));
 }
 
@@ -204,14 +206,9 @@ nav a:hover {
   vertical-align: -0.125em;
 }
 
-/* Unified animation for elements (not sections) */
-.article-item, .misc-item, .news-list li {
+/* Unified animation for elements */
+.article-item {
   transition: transform var(--transition-time) ease;
-}
-
-.article-item:hover, 
-.misc-item:hover, .news-list li:hover {
-  transform: translateX(var(--animation-offset));
 }
 
 /* Section animation */
@@ -263,7 +260,7 @@ section {
 .article-item:hover {
   border-right-color: var(--accent-color);
   border-bottom-color: var(--accent-color);
-  box-shadow: 0 4px 12px rgba(74, 116, 185, 0.15);
+  box-shadow: 0 4px 12px var(--accent-rgba-medium);
   transform: translateX(var(--animation-offset));
 }
 
@@ -272,7 +269,7 @@ section {
 }
 
 .pub-title {
-  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-weight: bold;
   margin-bottom: 0.4rem;
   font-size: 1.05rem;
@@ -311,7 +308,7 @@ section {
   transition: all var(--transition-time) ease;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  background-color: rgba(74, 116, 185, 0.08);
+  background-color: var(--accent-rgba-light);
   text-decoration: none;
 }
 
@@ -319,7 +316,7 @@ section {
   color: #fff;
   background-color: var(--accent-color);
   transform: translateX(3px);
-  box-shadow: 0 2px 5px rgba(74, 116, 185, 0.2);
+  box-shadow: 0 2px 5px var(--accent-rgba-strong);
 }
 
 .pub-attribution a:hover {
@@ -369,13 +366,13 @@ section {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(74, 116, 185, 0.4);
+    box-shadow: 0 0 0 0 var(--accent-rgba-pulse);
   }
   70% {
-    box-shadow: 0 0 0 6px rgba(74, 116, 185, 0);
+    box-shadow: 0 0 0 6px rgba(5, 150, 105, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(74, 116, 185, 0);
+    box-shadow: 0 0 0 0 var(--accent-rgba-pulse);
   }
 }
 
@@ -395,7 +392,7 @@ section {
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: rgba(150, 150, 150, 0.25);
+  background-color: var(--timeline-rgba-light);
 }
 
 #experience {
@@ -419,7 +416,7 @@ section {
   width: 10px;
   height: 10px;
   background-color: var(--bg-color);
-  border: 2px solid rgba(150, 150, 150, 0.4);
+  border: 2px solid var(--timeline-rgba-dark);
   border-radius: 50%;
   z-index: 2;
 }
@@ -472,7 +469,7 @@ section {
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: rgba(150, 150, 150, 0.25);
+  background-color: var(--timeline-rgba-light);
 }
 
 .education-item {
@@ -492,7 +489,7 @@ section {
   width: 10px;
   height: 10px;
   background-color: var(--bg-color);
-  border: 2px solid rgba(150, 150, 150, 0.4);
+  border: 2px solid var(--timeline-rgba-dark);
   border-radius: 50%;
   z-index: 2;
 }
@@ -509,7 +506,7 @@ section {
 }
 
 .education-degree {
-  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-weight: 501;
   color: var(--text-color);
   margin-bottom: 0.2rem;
@@ -552,7 +549,7 @@ section {
 }
 
 .skill-category h3 {
-  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0 0 1.5rem 0;
@@ -653,12 +650,12 @@ strong {
 .project-card:hover {
   border-right-color: var(--accent-color);
   border-bottom-color: var(--accent-color);
-  box-shadow: 0 4px 12px rgba(74, 116, 185, 0.15);
+  box-shadow: 0 4px 12px var(--accent-rgba-medium);
   transform: translateY(-2px);
 }
 
 .project-card h3 {
-  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-size: 1.1rem;
   font-weight: bold;
   margin: 0 0 0.75rem 0;
@@ -685,7 +682,7 @@ strong {
 }
 
 .project-icon {
-  /* Comment this out for an upper right arrow to appear */
+  /* Not displayed - this icon would appear as upper right arrow on hover */
   display: none;
   width: 16px;
   height: 16px;
@@ -730,9 +727,10 @@ strong {
 
   /* Disable right-moving hover animations on mobile */
   .article-item:hover,
-  .publication-card:hover, 
-  .misc-item:hover, 
-  nav a:hover, .social-links-header a:hover, .pub-links a:hover, .project-card:hover {
+  nav a:hover,
+  .social-links-header a:hover,
+  .pub-links a:hover,
+  .project-card:hover {
     transform: none !important;
   }
 }
