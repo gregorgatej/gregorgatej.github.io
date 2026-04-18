@@ -541,24 +541,6 @@ nav a:hover {
   color: #fff;
 }
 
-.project-icon {
-  /* Not displayed - this icon would appear as upper right arrow on hover */
-  display: none;
-  width: 16px;
-  height: 16px;
-  color: var(--accent-color);
-  transition: all var(--transition-time) ease;
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  z-index: 10;
-}
-
-.project-card:hover .project-icon {
-  color: var(--accent-hover);
-  transform: translate(3px, -3px);
-}
-
 /* Technical skills section */
 
 #technical-skills {
