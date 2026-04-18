@@ -25,14 +25,14 @@
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Amulya Variable';
   src: url('assets/fonts/AmulyaVariable.woff2') format('woff2');
-  /* font-variation-settings: "wght" 400; */
+  font-variation-settings: "wght" 400;
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: 'Synonym';
@@ -55,7 +55,7 @@
 }
 
 body {
-  font-family: 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
@@ -89,7 +89,7 @@ header {
 }
 
 h1 {
-  font-family: 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 0.25rem;
@@ -110,7 +110,7 @@ h1 a:hover {
 }
 
 h2 {
-  font-family: 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 1.4rem;
   font-weight: bold;
   margin: 2.5rem 0 1.25rem 0;
@@ -284,7 +284,7 @@ section {
 }
 
 .pub-title {
-  font-family: 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
   font-weight: bold;
   margin-bottom: 0.4rem;
   font-size: 1.05rem;
@@ -550,7 +550,7 @@ section {
 }
 
 .education-degree {
-  font-family: 'Amulya Variable', 'Amulya', serif;
+  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
   font-weight: 501;
   color: var(--text-color);
   margin-bottom: 0.2rem;
@@ -593,7 +593,7 @@ section {
 }
 
 .skill-category h3 {
-  font-family: 'Amulya Variable', 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 0.95rem;
   font-weight: 500;
   margin: 0 0 1.5rem 0;
@@ -700,7 +700,7 @@ strong {
 }
 
 .project-card h3 {
-  font-family: 'Amulya', 'Merriweather', Georgia, 'Times New Roman', serif;
+  font-family: 'Amulya', 'Synonym', 'Merriweather', Georgia, 'Times New Roman', serif;
   font-size: 1.1rem;
   font-weight: bold;
   margin: 0 0 0.75rem 0;
