@@ -39,12 +39,12 @@
   --bg-color: #fff;
   --text-color: #2d3748;
   --text-secondary: #4a5568;
-  --accent-color: #059669;
-  --accent-hover: #047857;
-  --accent-rgba-light: rgba(5, 150, 105, 0.08);
-  --accent-rgba-medium: rgba(5, 150, 105, 0.15);
-  --accent-rgba-strong: rgba(5, 150, 105, 0.2);
-  --accent-rgba-pulse: rgba(5, 150, 105, 0.4);
+  --accent-color: #4a74b9;
+  --accent-hover: #3a5c9e;
+  --accent-rgba-light: rgba(74, 116, 185, 0.08);
+  --accent-rgba-medium: rgba(74, 116, 185, 0.15);
+  --accent-rgba-strong: rgba(74, 116, 185, 0.2);
+  --accent-rgba-pulse: rgba(74, 116, 185, 0.4);
   --border-color: #e2e8f0;
   --shadow-color: rgba(0,0,0,0.05);
   --timeline-rgba-light: rgba(150, 150, 150, 0.25);
@@ -695,7 +695,7 @@ nav a:hover {
     box-shadow: 0 0 0 0 var(--accent-rgba-pulse);
   }
   70% {
-    box-shadow: 0 0 0 6px rgba(5, 150, 105, 0);
+    box-shadow: 0 0 0 6px rgba(74, 116, 185, 0);
   }
   100% {
     box-shadow: 0 0 0 0 var(--accent-rgba-pulse);
