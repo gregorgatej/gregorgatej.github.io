@@ -1,25 +1,30 @@
-# Minimal Academic Website Template
+# Technical Portfolio
 
-A clean, minimal academic website template, designed for researchers and PhD students. The design and source code are from [Yuhui Zhang](https://cs.stanford.edu/~yuhuiz/).
+**My Portfolio:** This is the source code for [Gregor Gatej's technical portfolio](https://gregorgatej.github.io/), showcasing my projects, technical skills, experience, and articles in document management systems, information retrieval, and full-stack development.
 
-![Screenshot](images/demo.jpg)
+---
+
+**Want to use this as a template?** This portfolio is built on a clean, minimal design that's easy to customize. Feel free to fork this repository and adapt it for your own portfolio. See [Getting Started](#getting-started) below.
+
+---
 
 ## Features
 
-- Minimalist, academic-focused design
-- Responsive layout
-- Easy to customize
-- SEO-friendly meta tags
-- Publication showcase support
+- Clean, minimal design
+- Fully responsive across all devices
+- Easily customizable
+- SEO-focused meta tags
+- Project and article portfolio showcase
+- Experience, education and technical skills sections
 
-## Quick Start
+## Getting Started
 
-0. Clone this repository and `cd` into the directory
-1. Run `python -m http.server` and visit `http://localhost:8000`
-2. Replace placeholders marked with `[brackets]` in `index.html`
-3. Update profile photo in `images/profile.jpeg`
-4. Modify `articles.json` for your articles
-5. Customize sections as needed (About, Research, News, etc.)
+1. Run `python -m http.server` to view locally at `http://localhost:8000`
+2. Update your profile information and photo in `index.html`
+3. Add your articles to `articles.json`
+4. Fill in your projects, experience, education, and technical skills in their respective sections of `index.html`
+5. Customize styling in `styles.css` as needed
+6. Deploy to GitHub Pages or your hosting of choice
 
 ## File Structure
 
@@ -29,22 +34,31 @@ A clean, minimal academic website template, designed for researchers and PhD stu
 ├── styles.css          # CSS styling
 ├── scripts.js          # JavaScript for dynamic content
 ├── articles.json       # Article data
-└── images/            # Image assets
-    └── profile.jpg
+└── assets/            
+    ├── fonts/         # Font files
+    ├── images/        # Image assets
+    └── pdf/           # PDF documents
 ```
 
-<!-- ## Image Attribution
+## Attribution
 
-### Publications Thumbnails
+This project is based on the
+Minimal Academic Website
+template created by Yuhui Zhang.
 
-| Article | Image | License |
-|-------------|-------|---------|
-| Six Hats of Thinking and Design Thinking Techniques | ["Sticky Note Pad Papers on White Surface"](https://www.pexels.com/photo/sticky-note-pad-papers-on-white-surface-6991355/) by [DS stories](https://www.pexels.com/@ds-stories/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
-| Exploring What Is Creativity Through Tina Seelig’s Innovation Engine | ["Close-Up Shot of a Flash Bulb on a White Surface"](https://www.pexels.com/photo/close-up-shot-of-a-flash-bulb-on-a-white-surface-7507693/) by [Zacharias Korsalka](https://www.pexels.com/@zacharias-korsalka-21691965/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
-| Igra obkoljevanja | ["Terytorium w go"](https://commons.wikimedia.org/wiki/File:Terytorium_w_go.png) by [Tim Ocean](https://commons.wikimedia.org/wiki/User:Tim_Ocean) | [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en) |
-| On Lucretius’ Theory of Simulacra | [Close Up Photo of a Painting](https://www.pexels.com/photo/close-up-photo-of-a-painting-8425692/) by [
-Mateusz Kitka](https://www.pexels.com/@mateuszkitka/) | [Pexels License](https://www.pexels.com/license/) - Free to use |
-| Irwinove pozne črte | [Low Angle Shot of Power Lines in the Sky](https://www.pexels.com/photo/low-angle-shot-of-power-lines-in-the-sky-12014309/) by [Dancan Wachira](https://www.pexels.com/@washira-m1/) | [Pexels License](https://www.pexels.com/license/) - Free to use | -->
+The original repository is available here:
+https://github.com/yuhui-zh15/Minimal-Academic-Website
+
+This version includes substantial modifications, including layout changes, new sections (GitHub Projects, Articles, Experience, Education, Technical Skills), redesigned components, and codebase refactoring.
+
+## Assets and Resources
+
+- **Icons provided by**
+  - Simple Icons: https://simpleicons.org/
+  - Remix Icon: https://remixicon.com/
+
+- **Fonts provided by**
+  - Fontshare: https://www.fontshare.com/
 
 ## License
 
@@ -52,4 +66,5 @@ MIT License
 
 ---
 
-For a live example, visit [Yuhui Zhang's website](https://cs.stanford.edu/~yuhuiz/).
+For the original version, visit [Yuhui Zhang's website](https://cs.stanford.edu/~yuhuiz/).  
+For a live version of this adaptation, see [Gregor Gatej's website](https://gregorgatej.github.io/).
