@@ -1,0 +1,293 @@
+commit 7b067b3dc6f6c4ef5a1faee684e7dbea7bb09558
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 08:19:48 2026 +0200
+
+    refactor: remove hidden project icons
+
+commit 682b9005fdab015dd64b27c4c8d68696f700d007
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 08:14:43 2026 +0200
+
+    refactor: remove unused article CSS classes
+
+commit 003f339b707f707111f339f7d612971412c28f82
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 08:11:20 2026 +0200
+
+    chore: remove unused Font Awesome import
+
+commit 76e1b39aa8626b73a90af1c0d3693f84b1ef04d1
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 08:02:21 2026 +0200
+
+    style: revert to blue color scheme
+
+commit a3dd435c4187e3525fa8e1aaae9f6edc245df8f8
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 07:46:58 2026 +0200
+
+    refactor: reorganize CSS for maintainability
+
+commit ba7d5cb9787dcb441a8d30eb680c3cf497b642c5
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 07:37:29 2026 +0200
+
+    refactor: rename pub* CSS classes to article* for consistency
+
+commit 6832c89aa14ca151247fed3598c74513ddf4df79
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 07:34:36 2026 +0200
+
+    refactor: remove dead code and improve naming
+
+commit 05e22a617b09d4da862252d9c6d83f221e2fa9d2
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 07:05:22 2026 +0200
+
+    chore: remove 'selected' field from article entries
+
+commit dfa36bd38c19acc3561e1b184241a2352991dfa4
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 06:53:12 2026 +0200
+
+    chore: clean up images folder
+
+commit b22d4ee12ad48bb556512616bfffaeb5ba427891
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 06:41:36 2026 +0200
+
+    chore: clean and reformat index.html
+
+commit 5de952837700c9d403e5a31e08376f628dc41ea7
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 06:32:58 2026 +0200
+
+    chore: remove dead css
+
+commit 21bdae5a2e061180446ee29cd8137faa87345dae
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Sat Apr 18 06:27:25 2026 +0200
+
+    chore: make font families uniform
+
+commit 72b61d2e0bf640b69a43a4de47daf4380a790aeb
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 15:33:06 2026 +0200
+
+    style: change boldness of elements inside Experience, Education and Technical Skills sections and change color of timeline dots and Skills cards
+
+commit b4e0d5feed11b90897877c035da1cdd41f043170
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 14:24:09 2026 +0200
+
+    feat: change order of GitHub Project cards
+
+commit 20c3028a1550359bc0a556566a4ccfe1e1b61a45
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 14:21:18 2026 +0200
+
+    style: uppercase all titles
+
+commit 18d1b5c487b6fe6295f91a0d73afcb1d5c09ea9a
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 14:09:21 2026 +0200
+
+    style: add rounded boxes around titles
+
+commit 5d928dfd148abac9093a00b3ddd048dd1102af00
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 13:38:37 2026 +0200
+
+    style: change primary font family to Amulya
+
+commit 29eb27eede8e97539222b7143d2f69dba6e154df
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 13:13:35 2026 +0200
+
+    style: add horizontal line below social media links
+
+commit 975035a81a31cce6d5bc45227e33fd5f19c434b3
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 13:10:03 2026 +0200
+
+    chore: change profile picture
+
+commit d97f2ebdc5ef33c5f74e2ac080a0cfa41e3c0ce0
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 00:26:52 2026 +0200
+
+    feat: make vertical spacing between sections consistent
+
+commit f933138bff7a99fb9fed40dc81e028c47289375a
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Fri Apr 17 00:21:02 2026 +0200
+
+    feat: reintroduce cards with borders and shading
+
+commit b8988c2ca0b579e58e20f32d6b1cf3bc73a4363f
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 23:45:13 2026 +0200
+
+    feat: improve on vertical spacing
+
+commit 6620cbd9aac18c5ada8e239b85e29845e9b403f8
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 22:48:01 2026 +0200
+
+    feat: remove hover effect from profile picture
+
+commit ce5e427705b667bdc8268cc9666dc7af98f7b484
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 22:40:40 2026 +0200
+
+    feat: remove shades, borders and change movement of cards
+
+commit b7b31ba60e90074a411f47f56fff47d1ead5ea52
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 18:40:27 2026 +0200
+
+    feat: make headings clickable
+
+commit a36fe92ace5f6c57166f5dac680096f42a81259c
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 18:25:18 2026 +0200
+
+    style: change icons
+
+commit 47600e52d5542f519efc672e0b5efbfbce346fbe
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 17:24:01 2026 +0200
+
+    feat: add option to download CV
+
+commit a2ba23acbaea087e5f067b6f950f6bb435f6a312
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 14:35:09 2026 +0200
+
+    style: make shadowing consistent across Articles and GitHub projects section
+
+commit fab344c2d942d55c5e8b7867fe2b255958311805
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 14:17:01 2026 +0200
+
+    style: improve indentation of elements inside Technical Skills section
+
+commit 36ba51044d6efbb4deb00ff824df982e48df4527
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 14:12:16 2026 +0200
+
+    feat: add Technical Skills section
+
+commit ef68212ca58902f4120af4e05a14aee76eba3845
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 13:56:16 2026 +0200
+
+    feat: add theses to Education section
+
+commit 9b1be8c16e840f199dd15380dae14807c35f20ad
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 07:37:04 2026 +0200
+
+    feat: add Education section
+
+commit 27db5dfcba4e98fbd64ca9e4d7614bccf5451915
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 07:16:44 2026 +0200
+
+    feat: add Experience section
+
+commit f7f36c11776774e583a5c7740727599e83d4b623
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 05:34:17 2026 +0200
+
+    refactor: rename publications to articles throughout codebase
+
+commit a9dd72b5dd7bbac41aaa4c8c200daccd9ea4a595
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Thu Apr 16 05:24:35 2026 +0200
+
+    style: round the edges of GitHub project cards and make the article ones consistent with them
+
+commit 3ed5ca8666190195b4d90d57c7777b8108da99ed
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Wed Apr 15 17:48:19 2026 +0200
+
+    feat: change look and way of accessing articles and GitHub projects
+
+commit 8c80bc87ca30b6a22899277e30bc22110f0177e2
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Wed Apr 15 14:09:56 2026 +0200
+
+    feat: change accessing articles logic
+
+commit 7208007171ba17e27f0089f21899edc6d7cf3fb7
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Wed Apr 15 13:45:45 2026 +0200
+
+    feat: add Irwinove pozne črte article
+
+commit 6fdb2d5e71723358f14dbe1c11cceb3a6851f062
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Wed Apr 15 13:17:08 2026 +0200
+
+    feat: add On Lucretius’ Theory of Simulacra article
+
+commit 4c32c1d006a88b75de7b65ce7edb2e6965e171d5
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Wed Apr 15 12:58:34 2026 +0200
+
+    feat: add Igra obkoljevanja article
+
+commit da86ce5c3d2fe0ada27766e342d84e039cacd955
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Wed Apr 15 06:17:25 2026 +0200
+
+    feat: comment out news section and change selected articles
+
+commit 004c9072301de14c88c4410ef0542b57ae63cb4d
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Wed Apr 15 05:54:24 2026 +0200
+
+    feat: change GitHub project cards icons
+
+commit 336df2aa6926fe78a6496832b11cceaa08e05394
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Tue Apr 14 07:33:32 2026 +0200
+
+    feat: add third article
+
+commit 613027e4100e8580ea49fbf365eaf3d56a448096
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Tue Apr 14 07:14:06 2026 +0200
+
+    chore: add link to article and change thumbnail
+
+commit 2dad1ec093a0a67e78f53c345ffe2dd8e7278d8e
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Tue Apr 14 07:05:27 2026 +0200
+
+    feat: add thumbnail for second article and attribution for it inside README
+
+commit 83972c1138b346cda4c04c813b7a25830785200d
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Tue Apr 14 06:15:07 2026 +0200
+
+    style: align titles and descriptions in article cards
+
+commit 6ab28c683259ebbfef806911e22edfc22e670899
+Author: Gregor Gatej <gregor.gatej@gmail.com>
+Date:   Tue Apr 14 05:41:20 2026 +0200
+
+    feat: add social media links, showcase github projects and publications with cards
+
+commit edaed1da83eabfc431d08e94b26f88db045bdfe1
+Author: Yuhui Zhang <zyh.thu@gmail.com>
+Date:   Thu Feb 20 12:13:26 2025 -0800
+
+    Create LICENSE
+
+commit 7f85c09808af03ee9a737e39ee76e102eb96d54e
+Author: Yuhui Zhang <zyh.thu@gmail.com>
+Date:   Thu Feb 20 12:09:54 2025 -0800
+
+    v1
