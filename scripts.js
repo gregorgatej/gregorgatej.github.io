@@ -62,8 +62,8 @@ function createArticleElement(article) {
     if (e.target.tagName === 'A') {
       return;
     }
-    // Otherwise, navigate using the article link
-    window.location.href = article.link || '#';
+    // Otherwise, navigate using the article link in a new tab
+    window.open(article.link || '#', '_blank');
   });
   
   // Create content container
@@ -75,6 +75,7 @@ function createArticleElement(article) {
   title.className = 'article-title';
   const titleLink = document.createElement('a');
   titleLink.href = article.link || '#';
+  titleLink.target = '_blank';
   titleLink.textContent = article.title;
   title.appendChild(titleLink);
   content.appendChild(title);
