@@ -51,7 +51,7 @@ template created by Yuhui Zhang.
 The original repository is available here:
 https://github.com/yuhui-zh15/Minimal-Academic-Website
 
-This version includes substantial modifications, including layout changes, new sections (GitHub Projects, Articles, Experience, Education, Technical Skills), redesigned components, and codebase refactoring.
+This version includes substantial modifications, including layout changes, new sections (GitHub Projects, Articles, Experience, Education, Technical Skills), the addition of JSON-LD structured data, redesigned components, and codebase refactoring.
 
 ## Assets and Resources
 
