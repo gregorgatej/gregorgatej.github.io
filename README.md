@@ -1,6 +1,6 @@
 # Technical Portfolio
 
-**My Portfolio:** This is the source code for [Gregor Gatej's technical portfolio](https://gregorgatej.github.io/), showcasing my projects, technical skills, experience, and articles in document management systems, information retrieval, and full-stack development.
+**My Portfolio:** This is the source code for my technical portfolio, available at [gregorgatej.github.io](https://gregorgatej.github.io/), showcasing my projects, technical skills, experience, and articles.
 
 ---
 
