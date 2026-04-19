@@ -20,7 +20,7 @@
 ## Getting Started
 
 1. Run `python -m http.server` to view locally at `http://localhost:8000`
-2. Update your profile information and photo in `index.html`
+2. Update your photo and profile information, including JSON-LD schema markup in `index.html`
 3. Replace your CV PDF in `assets/pdf/` and update the CV / social media links in the header of `index.html`
 4. Add your articles to `articles.json`
 5. Fill in your projects, experience, education, and technical skills in their respective sections of `index.html`
