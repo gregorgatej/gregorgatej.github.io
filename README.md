@@ -37,6 +37,7 @@
 ├── articles.json       # Article data
 └── assets/            
     ├── fonts/          # Font files
+    ├── icons/          # Favicon and UI icons
     ├── images/         # Profile picture and other images
     └── pdf/            # CV and other PDF documents
 ```
