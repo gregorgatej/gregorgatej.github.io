@@ -21,10 +21,11 @@
 
 1. Run `python -m http.server` to view locally at `http://localhost:8000`
 2. Update your profile information and photo in `index.html`
-3. Add your articles to `articles.json`
-4. Fill in your projects, experience, education, and technical skills in their respective sections of `index.html`
-5. Customize styling in `styles.css` as needed
-6. Deploy to GitHub Pages or your hosting of choice
+3. Replace your CV PDF in `assets/pdf/` and update the CV / social media links in the header of `index.html`
+4. Add your articles to `articles.json`
+5. Fill in your projects, experience, education, and technical skills in their respective sections of `index.html`
+6. Customize styling in `styles.css` as needed
+7. Deploy to GitHub Pages or your hosting of choice
 
 ## File Structure
 
@@ -35,9 +36,9 @@
 ├── scripts.js          # JavaScript for dynamic content
 ├── articles.json       # Article data
 └── assets/            
-    ├── fonts/         # Font files
-    ├── images/        # Image assets
-    └── pdf/           # PDF documents
+    ├── fonts/          # Font files
+    ├── images/         # Profile picture and other images
+    └── pdf/            # CV and other PDF documents
 ```
 
 ## Attribution
