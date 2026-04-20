@@ -13,7 +13,7 @@
 - Clean, minimal design
 - Fully responsive across all devices
 - Easily customizable
-- SEO-focused meta tags
+- SEO-focused meta tags and JSON-LD schema markup
 - Project and article portfolio showcase
 - Experience, education and technical skills sections
 
