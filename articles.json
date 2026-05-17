@@ -1,6 +1,11 @@
 {
   "articles": [
     {
+      "title": "Installing and Configuring NixOS: A Practical Beginner’s Guide",
+      "description": "Introduces the basics of installing and configuring NixOS, covering declarative package management, reproducible development environments, PostgreSQL configuration, and system generations.",
+      "link": "https://medium.com/@gregor.gatej/installing-and-configuring-nixos-a-practical-beginners-guide-011b9418a4c4"
+    },
+    {
       "title": "Vector Search with Faiss, cuVS, CuPy and NVIDIA Nsight Optimization",
       "description": "Explores performance trade-offs between GPU vector search approaches, with practical optimization strategies and insights derived from NVIDIA Nsight Systems profiling.",
       "link": "https://medium.com/@gregor.gatej/comparing-different-types-of-vector-search-using-faiss-cuvs-cupy-and-optimizing-it-with-the-help-ccead10c7efd?postPublishedType=repub"
