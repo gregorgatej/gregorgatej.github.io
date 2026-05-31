@@ -1,6 +1,11 @@
 {
   "articles": [
     {
+      "title": "Running Oracle Database Locally on Linux for SQL and PL/SQL Practice",
+      "description": "Covers a local Oracle Database setup, including Docker-based installation, SQLcl connectivity, and the HR sample schema.",
+      "link": "https://medium.com/@gregor.gatej/installing-oracle-database-locally-on-linux-for-sql-and-pl-sql-practice-9f15c4bc9d90?postPublishedType=repub"
+    },
+    {
       "title": "Installing and Configuring NixOS: A Practical Beginner’s Guide",
       "description": "Introduces the basics of installing and configuring NixOS, covering declarative package management, reproducible development environments, PostgreSQL configuration, and system generations.",
       "link": "https://medium.com/@gregor.gatej/installing-and-configuring-nixos-a-practical-beginners-guide-011b9418a4c4"
